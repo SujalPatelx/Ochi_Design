@@ -21,7 +21,7 @@ const EyeEffect = () => {
 
     return (
         <div className='w-full h-screen overflow-hidden'>
-            <div data-scroll data-scroll-section data-scroll-speed='-.6' className='relative w-full h-full bg-[url(".\assets\eye-ball-bg.jpg")] bg-cover bg-center' >
+            <div data-scroll data-scroll-section data-scroll-speed='-.6' className='relative w-full h-full bg-[url("https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg")] bg-cover bg-center' >
                 <div className='absolute flex gap-[4vw] top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]'>
                     <div className='flex justify-center items-center w-[15vw] h-[15vw] bg-zinc-100 rounded-full'>
                         <div className='relative black-eye w-2/3 h-2/3 bg-zinc-800 rounded-full'>
