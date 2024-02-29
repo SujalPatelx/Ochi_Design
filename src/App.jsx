@@ -1,4 +1,5 @@
 import React from 'react'
+import Headroom from 'react-headroom'
 import Navigation from './components/Navigation'
 import LandingPage from './components/LandingPage'
 import Marquee from './components/Marquee'
@@ -15,9 +16,9 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className='main m-0 p-0 bg-[#F1F1F1] w-full h-full'>
-
-      <Navigation />
-
+      <Headroom>
+        <Navigation />
+      </Headroom>
       <LandingPage />
       <Marquee />
       <About />
