@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Neue-Montreal;
+  src: url(./fonts/NeueMontreal-Regular.ttf);
+}
+@font-face {
+  font-family: Founder-Grotesk;
+  src: url(./fonts/FoundersGrotesk-Semibold.ttf);
+}
+@font-face {
+  font-family: Marqii;
+  src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+.scroll-down-ani {
+  white-space: nowrap;
+  animation-name: scrollAnim;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.5, 1);
+}
+
+@keyframes scrollAnim {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.main-marque {
+  animation-name: marquii;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marquii {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.span-under {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.span-under::after {
+  content: "";
+  width: 100%;
+  height: 0.5vh;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.span-under:hover::after {
+  content: "";
+  width: 0;
+  transition: 0.28s ease-in-out;
+}
+
+.span-under::before {
+  content: "";
+  width: 0%;
+  height: 0.5vh;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.span-under:hover::before {
+  content: "";
+  width: 100%;
+  transition: 0.28s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.link-under {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.link-under::after {
+  content: "";
+  width: 100%;
+  height: 0.18vh;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.link-under:hover::after {
+  content: "";
+  width: 0;
+  transition: 0.28s ease-in-out;
+}
+
+.link-under::before {
+  content: "";
+  width: 0%;
+  height: 0.18vh;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.link-under:hover::before {
+  content: "";
+  width: 100%;
+  transition: 0.28s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.readme-hover:hover .img-over {
+  width: 40vw;
+}
+
+.btn-outline {
+  box-shadow: inset 0 0 0 1px #cdea68;
+}
